@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<title>Require-Sync jQuery Demo</title>
+	<style type="text/css">
+	body{
+		!color: #1DCAFF
+	}
+	.viewport {
+		padding:20px;
+		background-color:#2C2E3C;
+		color: #E0E1DA;
+	}
+	.keyword {
+		color: #1DCAFF
+
+	}
+	.comment{
+		background-color: #404040;
+		color:#A0A0A0;
+	}
+	.string {
+		color:#93C9A4;
+	}
+	.brace{
+		color:#878787;
+	}
+	a{
+		color: #1DCAFF;
+		text-decoration: none;
+	}
+
+	</style>
+	<script type="text/javascript" src="../src/require.js"></script>
+	<script type="text/javascript">
+		
+
+		// include esprima for better debugging.
+		var esprima = require("../lib/esprima");
+
+		// this also works, but a more effective demonstration is including all of the 75+ source files
+		// var jQuery = require("//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min");
+
+		var $ = jQuery = require("js/jquery/jquery");
+
+		$(function() {
+			$("body").append("<span>IT WORKED!</span>");
+
+			var btn = $("<button>Click to download concatenated files</button>");
+
+			$("body").append(btn);
+
+			btn.click(function() { require.save() });
+
+		});
+		
+
+	</script>
+</head>
+<body>
+<pre class="viewport">
+		<span class="comment">// include <a href="http://esprima.org/">esprima</a> for better debugging.</span>
+		<span class="keyword">var</span> esprima = require<span class="brace">(</span><span class="string">"../lib/esprima"</span><span class="brace">)</span>;
+
+		<span class="comment">// this also works, but a more effective demonstration is including all of the 75+ source files</span>
+		<span class="comment">// var jQuery = require("//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min");</span>
+
+		<span class="keyword">var</span> $ = jQuery = require<span class="brace">(</span><span class="string">"js/jquery/jquery"</span><span class="brace">)</span>;
+
+		<span class="comment">// And now, just start using it!</span>
+
+		$<span class="brace">(</span><span class="keyword">function</span><span class="brace">(</span><span class="brace">) {</span>
+			$<span class="brace">(</span><span class="string">"body"</span><span class="brace">)</span>.append<span class="brace">(</span><span class="string">"&lt;span&gt;IT WORKED!&lt;/span&gt;"</span><span class="brace">)</span>;
+
+			<span class="keyword">var</span> btn = $<span class="brace">(</span><span class="string">"&lt;button&gt;Click to download concatenated files&lt;/button&gt;"</span><span class="brace">)</span>;
+
+			$<span class="brace">(</span><span class="string">"body"</span><span class="brace">)</span>.append<span class="brace">(</btn<span class="brace">)</span>;
+
+			btn.click<span class="brace">(</btn<span class="brace">)</span>;><span class="keyword">function</span><span class="brace">(</span><span class="brace">) {</span> require.save<span class="brace">(</span><span class="brace">)</span> <span class="brace">})</span>;
+
+		<span class="brace">})</span>;
+		
+		
+</pre>
+
+</body>
+</html>
