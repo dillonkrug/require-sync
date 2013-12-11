@@ -9,7 +9,8 @@ var arr 		= require("var/arr"),
 	trim 		= require("var/trim"),
 	support 	= require("var/support");
 
-// console.log("fuck scope",xxxxxxxx)
+	// require("jquery");
+
 var
 	// Use the correct document accordingly with window argument (sandbox)
 	document = window.document,

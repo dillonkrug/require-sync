@@ -29,6 +29,12 @@
 		color: #1DCAFF;
 		text-decoration: none;
 	}
+	.tag {
+		color: #F92672;
+	}
+	.attr {
+		color:#A6E22E;
+	}
 
 	</style>
 	<script type="text/javascript" src="../src/require.js"></script>
@@ -59,6 +65,8 @@
 </head>
 <body>
 <pre class="viewport">
+	&lt;<span class="tag">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;
+
 		<span class="comment">// include <a href="http://esprima.org/">esprima</a> for better debugging.</span>
 		<span class="keyword">var</span> esprima = require<span class="brace">(</span><span class="string">"../lib/esprima"</span><span class="brace">)</span>;
 
@@ -80,7 +88,8 @@
 
 		<span class="brace">})</span>;
 		
-		
+	&lt;/<span class="tag">script</span>&gt;
+
 </pre>
 
 </body>
