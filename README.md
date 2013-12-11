@@ -41,8 +41,8 @@ require.load([ scripts ])
 ---
 ```javascript
 require.load([{
-	n: 'path/to/file', 	// including the file name
-	d: 'path/to', 		// the directory embedded requires wil be relative to
+	n: 'path/to/file.js', 	// includes the file name (__filename)
+	d: 'path/to', 		// the directory embedded requires wil be relative to (__dirname)
 	c: < wrapped code >	// function(module, require){ /* your code here */ return module.exports; }
 }, ... ]);
 ```
