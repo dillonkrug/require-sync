@@ -1,13 +1,13 @@
-var arr 		= require("var/arr"),
-	slice 		= require("var/slice"),
-	concat 		= require("var/concat"),
-	push 		= require("var/push"),
-	indexOf 	= require("var/indexOf"),
-	class2type 	= require("var/class2type"),
-	toString 	= require("var/toString"),
-	hasOwn 		= require("var/hasOwn"),
-	trim 		= require("var/trim"),
-	support 	= require("var/support");
+var arr			= require("var/arr"),
+	slice		= require("var/slice"),
+	concat		= require("var/concat"),
+	push		= require("var/push"),
+	indexOf		= require("var/indexOf"),
+	class2type	= require("var/class2type"),
+	toString	= require("var/toString"),
+	hasOwn		= require("var/hasOwn"),
+	trim		= require("var/trim"),
+	support		= require("var/support");
 
 	// require("jquery");
 
