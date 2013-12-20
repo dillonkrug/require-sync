@@ -19,13 +19,6 @@ NodeJS style require() in the browser.  No build necessary.
 
 		$(function() {
 			$("body").append("<span>IT WORKED!</span>");
-
-			var btn = $("<button>Click to download concatenated files</button>");
-
-			$("body").append(btn);
-
-			btn.click(function() { require.save() });
-
 		});
 		
 
